@@ -34,7 +34,7 @@ const quotes = [
 
 const btn = document.getElementById("generate-btn");
 
-  btn.addEventListener("click", function() {
+btn.addEventListener("click", function () {
 
     let random = Math.floor(Math.random() * quotes.length);
 
@@ -43,4 +43,4 @@ const btn = document.getElementById("generate-btn");
     document.querySelector("#quote").textContent = rQuote.quote;
     document.querySelector(".author").textContent = rQuote.author;
 
-  });
+});
