@@ -31,3 +31,16 @@ const quotes = [
 ];
 
 // tu código aquí
+
+const btn = document.getElementById("generate-btn");
+
+  btn.addEventListener("click", function() {
+
+    let random = Math.floor(Math.random() * quotes.length);
+
+    var rQuote = quotes[random];
+
+    document.querySelector("#quote").textContent = rQuote.quote;
+    document.querySelector(".author").textContent = rQuote.author;
+
+  });
